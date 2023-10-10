@@ -1,0 +1,49 @@
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-areas: "header header sidebar"
+                       "header header content-1"
+                       "content-2 content-2 content-2 "
+                        "footer footer footer";
+  grid-template-columns: 200px 1fr 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
+  gap: 0,3rem;
+  max-width: 50vw;
+  max-height: 50vh;
+  
+}
+.header {
+  grid-area: header;
+  background-color: aqua;
+  max-width: 100vw;
+  max-height: 100%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: antiquewhite;
+  max-width: 100vw;
+  max-height: 100%;
+}
+
+.content-1 {
+  grid-area: content-1;
+  background-color: brown;
+  max-width: 100vw;
+  max-height: 100%;
+}
+
+.content-2 {
+  grid-area: content-2;
+  background-color: chartreuse;
+  max-width: 100vw;
+  max-height: 100%;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: burlywood;
+  max-width: 100vw;
+  max-height: 100%;
+}
+
